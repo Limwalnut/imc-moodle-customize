@@ -1,0 +1,184 @@
+.unit-banner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+}
+
+.unit-banner-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    border: 1px solid rgb(27, 155, 228);
+    background-color: transparent;
+    color: rgb(27, 155, 228);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1;
+    text-align: center;
+    max-width: 40%;
+    min-width: 165px;
+}
+
+.unit-banner-btn:hover {
+    background-color: #c9c9c9;
+    color: #000;
+}
+
+.button-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-icon {
+    font-size: 1.2em;
+    width: 1.2em;
+    height: 1.2em;
+    background-size: 100% 100%;
+}
+
+.zoom-icon {
+    background-image: url('https://moodle.imc.edu.au/pluginfile.php/514046/mod_label/intro/icon-zoom.svg');
+}
+
+.unitoutline-icon {
+    background-image: url('https://moodle.imc.edu.au/pluginfile.php/514046/mod_label/intro/icon-document.svg');
+}
+
+.button-text {
+    font-size: 1em;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    .unit-banner {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .unit-banner-btn {
+        width: 100%;
+        max-width: 90%;
+        padding: 8px 16px;
+    }
+
+    .button-text {
+        font-size: 0.9em;
+    }
+}
+
+.tpheader_wave #page-header.nobg:before {
+    /* background-image: url("https://imc2.elearn.net.au/pluginfile.php/186/mod_label/intro/banner.jpg"); */
+    background: linear-gradient(to right, #56A8DC, #0070B8);
+    background-size: cover;
+    background-position: bottom right;
+}
+
+.text-box-heading {
+    position: relative;
+    font-size: 1.6em;
+    padding: 4px 1em;
+    background: #0070B8;
+    color: #fff;
+    border-radius: 0.15em;
+}
+
+.arrow-down {
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #0070B8;
+    font-size: 0;
+    line-height: 0;
+    margin-left: 7%;
+}
+
+.course-week-topic-title {
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    p {
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+    }
+
+    .underscore {
+        display: inline-block;
+        width: 100%;
+        height: 4px;
+        background-color: #F96E2A;
+        vertical-align: middle;
+    }
+}
+
+.orange-color {
+    color: #F96E2A;
+}
+
+.course-pano {
+    position: relative;
+    height: 175px;
+    overflow: hidden;
+    position: relative;
+
+    img {
+        bottom: 0;
+        height: 100%;
+        margin: 0 !important;
+        min-height: 175px;
+        object-fit: cover;
+        position: relative;
+        width: 100%;
+        max-width: 100% !important;
+    }
+
+    .title {
+        position: absolute;
+        left: 0;
+        padding: 20px;
+        top: 0;
+        background: transparent;
+
+
+        h2 {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            color: #fff !important;
+            font-size: 24px;
+            line-height: 28px;
+            display: flex;
+
+            span {
+                background: #0070B8;
+                padding: 4px 8px 8px 8px;
+            }
+        }
+
+        h4 {
+            color: #fff !important;
+            margin-left: 15px;
+            font-size: 16px;
+            line-height: 22px;
+
+            span {
+                background: rgba(0, 0, 0, .6);
+                border-left: 4px solid #0070B8;
+                padding: 8px;
+                display: inline-block;
+            }
+        }
+    }
+}
